@@ -219,26 +219,37 @@ PLACE ||--o{ COMMUNITY_RESPONSE : reference
 
 # 📁 프로젝트 구조
 
-``` text
+```text
 daejeon_radar/
 │
 ├── app/
-│   ├── chat/
+│   ├── __init__.py
 │   ├── db.py
-│   └── models.py
+│   ├── models.py
+│   └── chat/
+│       ├── __init__.py
+│       ├── prompt.py
+│       ├── retrieval.py
+│       ├── rewriter.py
+│       ├── router.py
+│       └── schemas.py
 │
 ├── radar_implement/
+│   ├── hot_to_use/
+│   ├── hot_to_use.md
+│   ├── index_v1.html
 │   ├── radar_frontend_v6.html
 │   └── radar_frontend_v7.html
 │
 ├── backend_main.py
 ├── main.py
 ├── local.db
-├── requirements.txt
-├── README.md
-│
 ├── daejeon_raidar.ipynb
-└── make_response.ipynb
+├── make_response.ipynb
+├── test_api.py
+├── requirements.txt
+├── how_to_use.md
+└── README.md
 ```
 
 ## 📂 주요 파일
