@@ -270,8 +270,4 @@ uvicorn backend_main:app --reload --port 8000
 
     http://localhost:8000
 
-Swagger
-
-    http://localhost:8000/docs
-
 ------------------------------------------------------------------------
