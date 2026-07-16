@@ -241,17 +241,18 @@ daejeon_radar/
 └── make_response.ipynb
 ```
 
-## 주요 파일
+## 📂 주요 파일
 
-  파일                     설명
-  ------------------------ -----------------
-  backend_main.py          FastAPI 서버
-  app/chat                 챗봇 모듈
-  local.db                 SQLite DB
-  radar_frontend_v6.html   메인 프론트엔드
-  requirements.txt         라이브러리 목록
-
-------------------------------------------------------------------------
+| 파일 | 설명 |
+|------|------|
+| `backend_main.py` | FastAPI 서버 실행, 장소·게시판·날씨·챗봇 API 제공 |
+| `app/chat/` | OpenAI 기반 챗봇 모듈 및 검색 로직 |
+| `app/models.py` | SQLAlchemy 데이터베이스 모델 정의 |
+| `app/db.py` | SQLite 데이터베이스 연결 및 세션 관리 |
+| `local.db` | 장소, 요청, 답변 데이터를 저장하는 SQLite 데이터베이스 |
+| `radar_frontend_v7.html` | 메인 프론트엔드 페이지 |
+| `requirements.txt` | 프로젝트에서 사용하는 Python 패키지 목록 |
+| `daejeon_raidar.ipynb` | 공공데이터 전처리 및 데이터베이스 구축 |
 
 # 🚀 실행 방법
 
