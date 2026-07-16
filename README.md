@@ -34,7 +34,7 @@
 -   GPS 또는 직접 좌표 입력
 -   비밀번호 기반 수정 및 삭제
 
-예) \> "탄방동 근처 철봉 있는 곳 아시나요?"
+예)  "탄방동 근처 철봉 있는 곳 아시나요?"
 
 ------------------------------------------------------------------------
 
@@ -76,11 +76,7 @@ Leaflet 지도를 이용하여 원하는 위치를 클릭하면 좌표가 자동
 
 챗봇은 게시판에 등록된 커뮤니티 데이터를 기반으로 답변합니다.
 
-예)
-
-> 화장실 어디 있어?
-
-↓
+예시) 화장실 어디 있어?
 
 -   주변 화장실 목록
 -   거리
@@ -91,23 +87,8 @@ Leaflet 지도를 이용하여 원하는 위치를 클릭하면 좌표가 자동
 
 # 📱 서비스 화면
 
-이미지를 README와 같은 폴더에 넣으면 아래와 같이 표시됩니다.
 
-``` md
-![메인](service/main_board.png)
-
-![요청 작성](요청 작성.png)
-
-![답변](답변.png)
-
-![지도 선택](답변 지도 선택.png)
-
-![지도](지도.png)
-
-![챗봇](챗봇 질문.png)
-
-![챗봇2](챗봇 질문2.png)
-```
+![서비스](service.png)
 
 ------------------------------------------------------------------------
 
@@ -218,25 +199,23 @@ PLACE ||--o{ COMMUNITY_RESPONSE : reference
 
 # 📡 API 명세
 
-  Method   Endpoint                   설명
-  -------- -------------------------- ------------------
-  GET      /places                    장소 목록 조회
-  GET      /places/bounds             지도 영역 조회
-  GET      /places/nearest            최근접 장소 조회
-  GET      /places/{contentid}        장소 상세 조회
-  GET      /weather/current           현재 날씨 조회
-  GET      /location-info             위치 + 날씨 조회
-  GET      /requests                  요청 목록 조회
-  GET      /requests/{id}             요청 상세 조회
-  POST     /requests                  요청 등록
-  DELETE   /requests/{id}             요청 삭제
-  POST     /requests/{id}/responses   답변 등록
-  DELETE   /responses/{id}            답변 삭제
-  GET      /responses                 지도용 답변 조회
-  POST     /chat                      챗봇 질문
-  GET      /health                    서버 상태 확인
-
-------------------------------------------------------------------------
+| Method | Endpoint | 설명 |
+|--------|----------|------|
+| GET | `/places` | 장소 목록 조회 |
+| GET | `/places/bounds` | 지도 영역 조회 |
+| GET | `/places/nearest` | 최근접 장소 조회 |
+| GET | `/places/{contentid}` | 장소 상세 조회 |
+| GET | `/weather/current` | 현재 날씨 조회 |
+| GET | `/location-info` | 위치 + 날씨 조회 |
+| GET | `/requests` | 요청 목록 조회 |
+| GET | `/requests/{id}` | 요청 상세 조회 |
+| POST | `/requests` | 요청 등록 |
+| DELETE | `/requests/{id}` | 요청 삭제 |
+| POST | `/requests/{id}/responses` | 답변 등록 |
+| DELETE | `/responses/{id}` | 답변 삭제 |
+| GET | `/responses` | 지도용 답변 조회 |
+| POST | `/chat` | 챗봇 질문 |
+| GET | `/health` | 서버 상태 확인 |
 
 # 📁 프로젝트 구조
 
@@ -277,7 +256,7 @@ daejeon_radar/
 # 🚀 실행 방법
 
 ``` bash
-git clone https://github.com/JIHO000/daejeon_radar.git
+git clone "깃 주소"
 
 cd daejeon_radar
 
@@ -295,13 +274,3 @@ Swagger
     http://localhost:8000/docs
 
 ------------------------------------------------------------------------
-
-# 🔮 향후 개선 사항
-
--   사용자 평점 기능
--   즐겨찾기
--   이미지 첨부
--   신고 기능
--   관리자 페이지
--   AI 추천 정확도 향상
--   사용자 활동 기반 추천
